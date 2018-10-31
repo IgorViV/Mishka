@@ -35,7 +35,113 @@
       <section class="page-title page-title--other">
         <h2>Вязание на заказ</h2>
       </section>
-
+      <section class="form">
+        <h3 class="visually-hidden">Форма для оформления заказа</h3>
+        <p>
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжимся с вами, чтобы уточнить детали.
+        </p>
+        <fieldset class="form__group form__group--type">
+          <legend class="form__group-title">
+            Тип
+          </legend>
+          <div>
+            <label>
+              <input type="radio" name="typeProduct" value="accessory" checked>
+              Аксессуар для  интерьера
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="typeProduct" value="toy">
+              Детская игрушка
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__group form__group--color">
+          <legend class="form__group-title">
+            Цвет
+          </legend>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct" checked>
+              Белый
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct" checked>
+              Серый
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct">
+              «Тиффани»
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct">
+              Черный
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct">
+              Розовый
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="colorProduct">
+              Оранжевый
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__group form__group--initial">
+          <legend class="form__group-title">
+            ФИО
+          </legend>
+          <div>
+            <label for="firstName">Имя:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Введите ваше имя*" required>
+          </div>
+          <div>
+            <label for="lastName">Фамилия:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Укажите фамилию*" required>
+          </div>
+          <div>
+            <label for="patronymic">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете*">
+          </div>
+        </fieldset>
+        <fieldset class="form__group form__group--initial">
+          <legend class="form__group-title">
+            Тел
+          </legend>
+          <div>
+            <input type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+          </div>
+        </fieldset>
+        <fieldset class="form__group form__group--initial">
+          <legend class="form__group-title">
+            E-mail
+          </legend>
+          <div>
+            <input type="email" name="email" placeholder="Ваш Email*" required>
+          </div>
+        </fieldset>
+        <fieldset class="form__group form__group--initial">
+          <legend class="form__group-title">
+            Доп
+          </legend>
+          <textarea name="wishes" cols="30" rows="10" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+        </fieldset>
+        <p>
+          *Поля обязательны для заполнения
+        </p>
+        <input type="submit" value="Отправить заказ">
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social">
