@@ -17,16 +17,16 @@
       <nav class="page-menu page-menu--no-js">
         <ul class="page-menu__list">
           <li class="page-menu__item">
-            <a class="page-menu__link" href="#">Каталог товаров</a>
+            <a class="page-menu__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="page-menu__item">
-            <a class="page-menu__link" href="#">Вязание на заказ</a>
+            <a class="page-menu__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="page-menu__item">
             <a class="page-menu__link" href="#">Поиск по сайту</a>
           </li>
           <li class="page-menu__item">
-            <a class="page-menu__link" href="#">Корзина: пока пуста</a>
+            <a class="page-menu__link" href="#">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -152,10 +152,12 @@
         <a class="page-footer__social-link page-footer__social-link--twitter" href="#" title="twitter"></a>
       </div>
       <div class="page-footer__developed">
-        <span>
-          Разработано
-        </span>
-        <a class="page-footer__developed-link" href="#" title="HTML Academy"></a>
+        <a class="page-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy" target="_blank">
+          <span>
+            Разработано
+          </span>
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
       </div>
     </footer>
     <script src="js/picturefill.js"></script>
@@ -167,15 +169,15 @@
       <form class="page-modal__form" action="#" method="get">
         <b>Выберите размер:</b>
         <label class="page-modal__label page-modal__label--checked">
-          <input type="radio" name="size" id="size-s" value="S" checked>
+          <input type="radio" name="size" value="S" checked>
           S
         </label>
         <label class="page-modal__label">
-          <input type="radio" name="size" id="size-m" value="M">
+          <input type="radio" name="size" value="M">
           M
         </label>
         <label class="page-modal__label">
-          <input type="radio" name="size" id="size-l" value="L">
+          <input type="radio" name="size" value="L">
           L
         </label>
         <input class="page-modal__submit" type="submit" value="Добавить">
