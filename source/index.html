@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="preload" href="fonts/opensans.woff2" as="font"> -->
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <title>Mishka</title>
   </head>
   <body>
     <header class="page-header">
-      <h1>Mishka</h1>
+      <h1 class="visually-hidden">Mishka</h1>
       <a class="page-logo">
-        <!-- Mishka -->
+
       </a>
       <nav class="page-menu">
         <ul class="page-menu__list">
@@ -29,19 +30,19 @@
           </li>
         </ul>
       </nav>
+    </header>
+    <main class="main">
       <section class="page-title">
         <h2>Милые штуки ручной  работы для дома</h2>
         <a href="#">Предметы  интерьера</a>
         <a href="#">Детские  игрушки</a>
       </section>
-    </header>
-    <main class="main">
       <section class="promo">
         <h2>Вязаные корзинки</h2>
         <p>Товар недели</p>
         <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="promo__properties">
-          <tr>
+          <tr class="promo__properties-item">
             <td>
               Цвет:
             </td>
@@ -49,7 +50,7 @@
               «Тиффани»/серый
             </td>
           </tr>
-          <tr>
+          <tr class="promo__properties-item">
             <td>
               Диаметр:
             </td>
@@ -57,7 +58,7 @@
               25 см
             </td>
           </tr>
-          <tr>
+          <tr class="promo__properties-item">
             <td>
               Высота:
             </td>
@@ -66,7 +67,7 @@
             </td>
           </tr>
         </table>
-        <img src="img/" width="100" height="100" alt="Photo">
+        <img src="#" width="260" height="315" alt="Photo">
         <p class="promo__price">
           Цена: 990 руб.
         </p>
@@ -145,16 +146,16 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="social">
-        <a class="social__link social__link--instagram" href="#" title="instagram"></a>
-        <a class="social__link social__link--facebook" href="#" title="facebook"></a>
-        <a class="social__link social__link--twitter" href="#" title="twitter"></a>
+      <div class="page-footer__social">
+        <a class="page-footer__social-link page-footer__social-link--instagram" href="#" title="instagram"></a>
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#" title="facebook"></a>
+        <a class="page-footer__social-link page-footer__social-link--twitter" href="#" title="twitter"></a>
       </div>
-      <div class="developed">
+      <div class="page-footer__developed">
         <span>
           Разработано
         </span>
-        <a class="developed__link" href="#" title="HTML Academy"></a>
+        <a class="page-footer__developed-link" href="#" title="HTML Academy"></a>
       </div>
     </footer>
     <script src="js/picturefill.js"></script>
