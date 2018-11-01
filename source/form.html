@@ -30,8 +30,7 @@
           </li>
         </ul>
         <button class="page-menu__button" type="button">
-          <img class="page-menu__button-img page-menu__button-img--close" src="img/icon-menu-close.svg">
-          <img class="page-menu__button-img page-menu__button-img--open" src="img/icon-menu-open.svg">
+
         </button>
       </nav>
     </header>
@@ -48,92 +47,92 @@
           <legend class="form__group-title">
             Тип
           </legend>
-          <div>
+          <p>
             <label>
               <input type="radio" name="typeProduct" value="accessory" checked>
               Аксессуар для  интерьера
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="radio" name="typeProduct" value="toy">
               Детская игрушка
             </label>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="form__group form__group--color">
           <legend class="form__group-title">
             Цвет
           </legend>
-          <div>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct" checked>
               Белый
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct" checked>
               Серый
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct">
               «Тиффани»
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct">
               Черный
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct">
               Розовый
             </label>
-          </div>
-          <div>
+          </p>
+          <p>
             <label>
               <input type="checkbox" name="colorProduct">
               Оранжевый
             </label>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="form__group form__group--initial">
           <legend class="form__group-title">
             ФИО
           </legend>
-          <div>
+          <p>
             <label for="firstName">Имя:</label>
             <input type="text" name="firstName" id="firstName" placeholder="Введите ваше имя*" required>
-          </div>
-          <div>
+          </p>
+          <p>
             <label for="lastName">Фамилия:</label>
             <input type="text" name="lastName" id="lastName" placeholder="Укажите фамилию*" required>
-          </div>
-          <div>
+          </p>
+          <p>
             <label for="patronymic">Отчество:</label>
             <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете*">
-          </div>
+          </p>
         </fieldset>
         <fieldset class="form__group form__group--initial">
           <legend class="form__group-title">
             Тел
           </legend>
-          <div>
+          <p>
             <input type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="form__group form__group--initial">
           <legend class="form__group-title">
             E-mail
           </legend>
-          <div>
+          <p>
             <input type="email" name="email" placeholder="Ваш Email*" required>
-          </div>
+          </p>
         </fieldset>
         <fieldset class="form__group form__group--initial">
           <legend class="form__group-title">
@@ -144,7 +143,9 @@
         <p>
           *Поля обязательны для заполнения
         </p>
-        <input type="submit" value="Отправить заказ">
+        <button class="form__btn-submit" type="submit">
+          Отправить заказ
+        </button>
       </section>
     </main>
     <footer class="page-footer">

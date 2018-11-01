@@ -30,8 +30,7 @@
           </li>
         </ul>
         <button class="page-menu__button" type="button">
-          <img class="page-menu__button-img page-menu__button-img--close" src="img/icon-menu-close.svg">
-          <img class="page-menu__button-img page-menu__button-img--open" src="img/icon-menu-open.svg">
+
         </button>
       </nav>
     </header>
@@ -137,7 +136,7 @@
               адрес:
             </td>
             <td>
-              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+              г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101
             </td>
           </tr>
         </table>
@@ -166,32 +165,36 @@
     </footer>
     <script src="js/picturefill.js"></script>
     <!-- MODAL -->
-    <div class="page-modal">
-      <b class="page-modal__title">
+    <section class="page-modal">
+      <h2 class="page-modal__title">
         Добавить  в корзину
-      </b>
+      </h2>
       <form class="page-modal__form" action="#" method="get">
-        <b>Выберите размер:</b>
-        <div>
+        <p>
+          <b>Выберите размер:</b>
+        </p>
+        <p>
           <label class="page-modal__label page-modal__label--checked">
             <input type="radio" name="size" value="S" checked>
             S
           </label>
-        </div>
-        <div>
+        </p>
+        <p>
           <label class="page-modal__label">
             <input type="radio" name="size" value="M">
             M
           </label>
-        </div>
-        <div>
+        </p>
+        <p>
           <label class="page-modal__label">
             <input type="radio" name="size" value="L">
             L
           </label>
-        </div>
-        <input class="page-modal__submit" type="submit" value="Добавить">
+        </p>
+        <button class="page-modal__submit" type="submit">
+          Добавить
+        </button>
       </form>
-    </div>
+    </section>
   </body>
 </html>
