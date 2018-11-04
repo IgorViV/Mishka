@@ -186,11 +186,37 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-menu__item--catalogue,
+  .page-menu__item--knitting {
+    // position: relative;
+    // .reset();
+
+    .page-menu__link {
+      position: static;
+      // left: 0;
+      // bottom: -44px;
+      width: 185px;
+      padding-top: 29px;
+      padding-bottom: 30px;
+      font-size: 17px;
+      line-height: 24px;
+      z-index: 50;
+    }
+  }
+
+  .page-menu__item--catalogue {
+    border-right: 1px solid #ececec;
+  }
+
+  .page-menu__item--knitting {
+    padding-left: 35px;
+  }
+
   .page-menu__item--new,
   .page-menu__item--sale {
     position: absolute;
-    bottom: 0px;
     left: 50px;
+    bottom: -44px;
     display: initial;
     .reset();
     border: none;
@@ -204,7 +230,7 @@
 
   .page-menu__item--sale {
     position: absolute;
-    left: 217px;
+    left: 271px;
     display: initial;
   }
 
