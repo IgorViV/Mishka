@@ -40,6 +40,7 @@ body {
   font-family: @font-family-base;
   color: @black;
   background-color: @white;
+  box-shadow: 0 0 8px #cccccc;
 }
 
 img {
@@ -53,9 +54,13 @@ a {
 }
 
 @media (min-width: @tablet-width) {
-  width: @tablet-width;
+  body {
+    width: @tablet-width;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  width: @desktop-width;
+  body {
+    width: @desktop-width;
+  }
 }
