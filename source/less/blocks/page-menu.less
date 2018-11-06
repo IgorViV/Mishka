@@ -85,7 +85,7 @@
 .page-menu--open {
 
   .page-menu__list {
-    display: initial;
+    display: block;
   }
 
   .page-menu__button {
@@ -133,7 +133,7 @@
     .page-menu__link {
       position: absolute;
       left: 0;
-      bottom: -44px;
+      bottom: -41px;
       width: 167px;
       .reset();
       font-size: 15px;
@@ -158,14 +158,21 @@
 
   .page-menu__link--search {
     align-self: center;
+    padding-left: 82px;
 
     span {
       display: none;
     }
   }
 
+  .page-menu__icon--search {
+    left: 43px;
+  }
+
   .page-menu__link--cart {
+    padding-top: 32px;
     padding-left: 84px;
+    padding-bottom: 33px;
   }
 
   .page-menu__icon--cart {
@@ -180,8 +187,8 @@
     .page-menu__link {
       position: static;
       width: 185px;
-      padding-top: 29px;
-      padding-bottom: 30px;
+      padding-top: 32px;
+      padding-bottom: 33px;
       font-size: 17px;
       line-height: 24px;
       z-index: 50;
@@ -200,7 +207,7 @@
   .page-menu__item--sale {
     position: absolute;
     left: 50px;
-    bottom: -44px;
+    bottom: -41px;
     display: initial;
     .reset();
     border: none;
