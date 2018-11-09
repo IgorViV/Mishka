@@ -98,6 +98,7 @@
     position: relative;
     // display: flex;
     // flex-direction: column;
+    margin-bottom: 30px;
     padding-top: 33px;
     padding-left: 50px;
     padding-right: 50px;
@@ -105,11 +106,14 @@
   }
 
   .promo__header {
+    position: relative;
+    z-index: 56;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 45px;
   }
+
   .promo__title {
     margin-bottom: 5px;
     font-size: 43px;
@@ -125,18 +129,45 @@
   }
 
   .promo__main {
+    // position: relative;
     width: 290px;
+  }
+
+  .promo__features {
+    margin-bottom: 33px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__properties {
+    margin-bottom: 54px;
+  }
+
+  .promo__properties-cell {
+
+    &--last {
+      padding-left: 0px;
+    }
   }
 
   .promo__img {
     position: absolute;
-    top: 140px;
+    z-index: 55;
+    bottom: 0;
     right: 50px;
     width: 334px;
     height: 403px;
     margin-bottom: 0;
-    border: 1px solid red;
-    z-index: 55;
+  }
+
+  .promo__price {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo__button-order {
+    margin-bottom: 0;
   }
 }
 
