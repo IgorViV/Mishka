@@ -202,7 +202,7 @@
           <p class="promo__price">
             Цена: 990 руб.
           </p>
-          <button class="promo__button-order" type="button">
+          <button class="promo__button-order" type="button" title="Заказать товар">
             Заказать
           </button>
         </div>
@@ -259,26 +259,30 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table>
-          <tr>
-            <td>
-              e-mail:
-            </td>
-            <td>
-              info@mimimishkashop.ru
-            </td>
-          </tr>
-          <tr>
-            <td>
-              адрес:
-            </td>
-            <td>
-              г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101
-            </td>
-          </tr>
+        <table class="contacts__table">
+          <tbody class="contacts__table-tbody">
+            <tr class="contacts__item contacts__item--first">
+              <td class="contacts__table-cell contacts__table-cell--first">
+                e-mail:
+              </td>
+              <td class="contacts__table-cell contacts__table-cell--last">
+                <a class="contacts__email-link" href="info@mimimishkashop.ru">
+                  info@mimimishkashop.ru
+                </a>
+              </td>
+            </tr>
+            <tr class="contacts__item contacts__item--last">
+              <td class="contacts__table-cell contacts__table-cell--first">
+                адрес:
+              </td>
+              <td class="contacts__table-cell contacts__table-cell--last">
+                г. Санкт-Петербург,<br> ул.&nbsp;Большая&nbsp;<br>Конюшенная,<br> д.&nbsp;19/8,&nbsp;офис&nbsp;101
+              </td>
+            </tr>
+          </tbody>
         </table>
         <div class="contacts__map">
-
+          <!-- MAP -->
         </div>
         <button class="contacts_button-write" type="submit" title="Напишите нам письмо">
           Напишите нам

@@ -1,10 +1,9 @@
 .comment {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   padding-left: 30px;
   padding-right: 30px;
-  font-weight: @font-weight-base;
 }
 
 .comment__title {
@@ -105,8 +104,6 @@
   color: #8d8d8d;
 }
 
-
-
 @media (min-width: @tablet-width) {
   .comment {
     position: relative;
@@ -114,7 +111,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 68px;
     padding-top: 77px;
     padding-left: 50px;
     padding-right: 50px;
@@ -122,6 +119,12 @@
     background-image: url(../img/review@1x.jpg);
     background-position: left top;
     background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .comment {
+      background-image: url(../img/review@2x.jpg);
+    }
   }
 
   .comment__title {
