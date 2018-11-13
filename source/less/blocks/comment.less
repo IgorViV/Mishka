@@ -1,9 +1,9 @@
 .comment {
   display: flex;
   flex-direction: column;
-  margin-bottom: 45px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 45px;
   color: @black;
   background-color: @white;
 }
@@ -113,10 +113,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 68px;
     padding-top: 77px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 68px;
     background-size: auto;
     background-image: url(../img/review@1x.jpg);
     background-position: left top;
@@ -155,7 +155,7 @@
     position: absolute;
     z-index: 10;
     right: 53px;
-    bottom: 14px;
+    bottom: 82px;
   }
 
   .comment__button-tog {
@@ -175,12 +175,11 @@
 
 @media (min-width: @desktop-width) {
   .comment {
-    width: 1050px;
-    .center();
-    margin-bottom: 67px;
     padding-top: 71px;
-    padding-left: 175px;
-    padding-right: 0;
+    padding-left: 275px;
+    padding-right: 100px;
+    padding-bottom: 67px;
+    background-position: left 100px top;
   }
 
   .comment__title {
@@ -205,8 +204,8 @@
   }
 
   .comment__toggle {
-    right: 0;
-    bottom: 61px;
+    right: 100px;
+    bottom: 128px;
   }
 
   .comment__button-tog {
