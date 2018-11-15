@@ -12,21 +12,73 @@
 
 .page-footer__social {
   display: flex;
-  border-top: 1px solid #e5e5e5;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 57px;
+  padding-right: 62px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__social-link {
+  svg {
+    display: block;
+  }
+}
+
+.page-footer__social-link:hover {
+  svg {
+    fill: @footer-link-hover-color;
+  }
+}
+
+.page-footer__social-link:active {
+  svg {
+    fill: @footer-link-down-color;
+  }
 }
 
 .page-footer__developed-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   span {
     margin-right: 30px;
+    padding-bottom: 5px;
+    font-weight: @font-weight-bold;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
 .page-footer__logo-academy {
   fill: #63d1bb;
+}
+
+.page-footer__developed-link:hover {
+
+  span {
+    color: @black;
+  }
+
+  .page-footer__logo-academy {
+    fill: @footer-link-hover-color;
+  }
+}
+
+.page-footer__developed-link:active {
+
+  span {
+    color: #bfbfbf;
+  }
+
+  .page-footer__logo-academy {
+    fill: @footer-link-down-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
