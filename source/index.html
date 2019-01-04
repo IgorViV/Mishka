@@ -352,39 +352,36 @@
         </a>
       </div>
     </footer>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/picturefill.js"></script>
     <!-- MODAL -->
-    <section class="page-modal">
-      <h2 class="page-modal__title">
-        Добавить  в корзину
-      </h2>
-      <form class="page-modal__form" action="#" method="get">
-        <p>
-          <b>Выберите размер:</b>
-        </p>
-        <p>
+    <section class="page-modal page-modal--hidden">
+      <div class="page-modal__wrapper">
+        <h2 class="page-modal__title">
+          Добавить  в корзину
+        </h2>
+        <form class="page-modal__form" action="#" method="get">
+          <p class="page-modal__form-title">
+            Выберите размер:
+          </p>
           <label class="page-modal__label page-modal__label--checked">
-            <input type="radio" name="size" value="S" checked>
+            <input class="page-modal__input" type="radio" name="size" value="S" checked>
             S
           </label>
-        </p>
-        <p>
           <label class="page-modal__label">
-            <input type="radio" name="size" value="M">
+            <input class="page-modal__input" type="radio" name="size" value="M">
             M
           </label>
-        </p>
-        <p>
           <label class="page-modal__label">
-            <input type="radio" name="size" value="L">
+            <input class="page-modal__input" type="radio" name="size" value="L">
             L
           </label>
-        </p>
-        <button class="page-modal__submit" type="submit">
-          Добавить
-        </button>
-      </form>
+          <button class="page-modal__submit" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
     </section>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

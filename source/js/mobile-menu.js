@@ -5,7 +5,6 @@ if (navMain && navMain.classList.contains('page-menu--no-js')) {
 navMain.classList.remove('page-menu--no-js');
 navMain.classList.add('page-menu--close');
 }
-
   navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('page-menu--close')) {
       navMain.classList.remove('page-menu--close');
