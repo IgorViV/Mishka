@@ -40,6 +40,12 @@
   background-repeat: no-repeat;
 }
 
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .video-production__content {
+    background-image: url(../img/video-mobile@2x.jpg);
+  }
+}
+
 .video-production__content-play {
   position: absolute;
   top: 50%;
@@ -96,3 +102,63 @@
   color: #8d8d8d;
 }
 
+@media (min-width: @tablet-width) {
+  .video-production {
+    position: relative;
+    padding: 0;
+    padding-top: 486px;
+    padding-bottom: 44px;
+  }
+
+  .video-production__header,
+  .video-production__description,
+  .video-production__button-order {
+    width: 584px;
+  }
+
+  .video-production__header {
+    margin-bottom: 25px;
+  }
+
+  .video-production__title {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .video-production__icon {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .video-production__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 0;
+    background-image: url(../img/video-tablet@1x.jpg);
+  }
+
+  @media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .video-production__content {
+      background-image: url(../img/video-tablet@2x.jpg);
+    }
+  }
+
+  .video-production__description {
+    margin-bottom: 36px;
+    margin-left: -3px;
+    padding-left: 0;
+    font-size: 15px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
