@@ -230,16 +230,31 @@
     }
   }
 
-  .page-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50px;
-    right: 50px;
-    z-index: 10;
-    height: 1px;
-    background-color: #ececec;
+  .page-title--other {
+    // padding-top: 95px;
+    background-image: none;
+
+    .page-title__header {
+      margin-bottom: 115px;
+    }
   }
+
+  @media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .page-title--other {
+      background-image: none;
+    }
+  }
+
+  // .page-title::before {
+    // content: "";
+    // position: absolute;
+    // top: 0;
+    // left: 50px;
+    // right: 50px;
+    // z-index: 10;
+    // height: 1px;
+    // background-color: #ececec;
+  // }
 
   .page-title::after {
     bottom: -3px;
@@ -254,9 +269,9 @@
     line-height: 57px;
   }
 
-  .page-title__promo {
-    right: 100px;
-  }
+  // .page-title__promo {
+    // right: 100px;
+  // }
 
   .page-title__link {
     width: 525px;
