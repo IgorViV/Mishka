@@ -1,3 +1,5 @@
+"use strict";
+
 var pageModal = document.querySelector('.page-modal');
 var modalSubmit = pageModal.querySelector('.page-modal__submit');
 var ESC_KEYCODE = 27;

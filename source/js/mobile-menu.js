@@ -1,3 +1,5 @@
+"use strict";
+
 var navMain = document.querySelector('.page-menu');
 var navToggle = document.querySelector('.page-menu__button');
 
